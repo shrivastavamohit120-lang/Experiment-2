@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#2b2440;
+    font-family: Arial, sans-serif;
+}
+
+.card{
+    width:320px;
+    background:#1e1b2e;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+.badge{
+    background:gold;
+    color:black;
+    padding:4px 10px;
+    border-radius:5px;
+    display:inline-block;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #00f2ff;
+    object-fit:cover;
+}
+
+.buttons{
+    margin:15px 0;
+    display:flex;
+    justify-content:space-around;
+}
+
+.btn{
+    padding:8px 20px;
+    border-radius:20px;
+    border:1px solid #00f2ff;
+    background:transparent;
+    color:#00f2ff;
+    cursor:pointer;
+}
+
+.btn.primary{
+    background:#00f2ff;
+    color:black;
+}
+
+.skills{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:8px;
+}
+
+.skill{
+    border:1px solid #444;
+    padding:6px;
+    border-radius:10px;
+    font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="badge">PRO</div><br>
+
+    <!-- YOUR IMAGE PATH -->
+    <img src="file:///C:/Users/shriv/OneDrive/ドキュメント/WhatsApp%20Image%202025-12-26%20at%2012.10.11%20PM.jpeg" 
+         class="profile-img">
+
+    <h2>Mohit Raj</h2>
+    <p>India</p>
+    <p>Web Developer & Student</p>
+
+    <div class="buttons">
+        <button class="btn primary">Message</button>
+        <button class="btn">Following</button>
+    </div>
+
+    <h3>Skills</h3>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">React</div>
+    </div>
+</div>
+
+</body>
+</html>
